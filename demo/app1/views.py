@@ -16,7 +16,7 @@ def welcome_page(request):
     return render(request, template_name='welcome_page.html', context=dict)
 
 def emp_details(request):
-    # example {'emp_name' : 'nandha', 'emp_id' :2 }
+    # example {'nandha' : 1, 'gopal' :123}
     queryset = EmpDetails.objects.all()
     Dict = {}
     for emp_detail in queryset:
